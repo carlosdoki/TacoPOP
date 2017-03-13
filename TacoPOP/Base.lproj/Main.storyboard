@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TacoPOP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuN-tm-eTS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TacoPOP" translatesAutoresizingMaskIntoConstraints="NO" id="YaD-1w-RiA">
+                                        <rect key="frame" x="57" y="10" width="261" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eGf-Xf-PFr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4hJ-El-mHg"/>
+                                    <constraint firstItem="YaD-1w-RiA" firstAttribute="centerY" secondItem="ZuN-tm-eTS" secondAttribute="centerY" id="cXh-Nh-yTA"/>
+                                    <constraint firstItem="YaD-1w-RiA" firstAttribute="centerX" secondItem="ZuN-tm-eTS" secondAttribute="centerX" id="f4d-lA-ukO"/>
+                                    <constraint firstItem="YaD-1w-RiA" firstAttribute="centerY" secondItem="ZuN-tm-eTS" secondAttribute="centerY" id="gHN-en-ODd"/>
+                                    <constraint firstItem="YaD-1w-RiA" firstAttribute="centerX" secondItem="ZuN-tm-eTS" secondAttribute="centerX" id="lmG-h6-DAS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZuN-tm-eTS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4NN-Vz-HUj"/>
+                            <constraint firstItem="ZuN-tm-eTS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fWn-pJ-afF"/>
+                            <constraint firstAttribute="trailing" secondItem="ZuN-tm-eTS" secondAttribute="trailing" id="kcE-Ks-rGb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TacoPOP" width="261" height="105"/>
+    </resources>
 </document>
